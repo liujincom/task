@@ -162,27 +162,30 @@ background-position: center;
 .yes{
     width: 100%;
     background-color: #000;
-    opacity: 0.3;
+    /* opacity: 0.3; */
     height: 5px;
     position: absolute;
     left: 0;
     bottom: 0;
     display: flex;
     z-index: 5;
+    transition: height 0.1s linear 0s;
 }
 .yes:hover{
     height: 40px;
 }
-.yes li{
+.txtItem{
     width: 12.5%;
-    background-color:rgb(0, 0, 0 );
     margin-right: 2px;
     color:#fff;
     text-align: center;
 }
-.yes li:hover{
-    background-color: rgba(252, 164, 2, 0.829);
+.txtItem:hover,.heighlightColor{
+    background-color: rgba(252, 164, 2);
 }
-.yes:last-child{
+.txtItem:last-child{
     margin: 0;
+}
+ .normalColor{
+    background-color: rgba(0, 0, 0, 0.5);
 }
